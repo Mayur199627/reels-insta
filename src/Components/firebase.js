@@ -4,6 +4,8 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 // import firebase from 'firebase/compat/app';
 import {getAuth} from 'firebase/auth'
+import {getStorage} from 'firebase/storage';
+import {getFirestore, collection} from 'firebase/firestore'
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAu--dYTQHuNcxbbZTW3YR77gdN8DUuHMs",
@@ -16,7 +18,16 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const firestore = getFirestore(app);
 
 const auth = getAuth();
 
 export {app, auth};
+
+export const database = {
+  users :collection(firestore,"users"), 
+  posts :collection(firestore,"posts"),
+  comments:collection(firestore,"comments"),
+}
+
+export const storage = getStorage(app)
