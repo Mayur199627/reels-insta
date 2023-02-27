@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login_cont{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    padding: 50px 200px;
+    justify-content: space-around;
+
+}
+
+.login_cont_left{
+    height: 500px;
+    width: 400px;
+    position: relative;
+}
+
+.login_cont_left .slider-images{
+    position: absolute;
+    top: 15px;
+    left: 133px;
+    height: 420px;
+    width: 220px;
+    border-radius: 10px;
+}
+
+.login_cont_left img{
+    height: 100%;
+    width: 100%;
+}
+
+.login_cont_right{
+    height: 500px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.insta_logo{
+    height: 6em;
+    width: 100%;
+}
+
+.login_details_cont{
+    height: 25em;
+    width: 100%;
+    padding: 20px 5px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user_details_login{
+    height: 7em;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user_details_login input{
+    height: 6em;
+    width:20em;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    border: thin solid gray;
+    outline: none;
+    background-color: #ecf0f1;
+}
+.submitBtn{
+    background-color: #3498db !important;
+    color: #fff;
+    font-weight: 600;
+    border: none !important;
+    cursor: pointer;
+}
+.other_type_login{
+    height: 100px;
+    text-align: center;
+}
+
+.other_type_login *{
+    padding: 5px 0;
+}
+
+.signup_link{
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 5px;
+}
+
+.login_with_fb{
+    width: 100%;
+    margin-left: 15px;
+    border-radius: 5px;
+    background-color: #3b5998;
+    color: #fff  !important;
+}
+
+@media only screen and (max-width: 1150px) {
+    .login_cont_left{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    .login_cont_right{
+        
+    }
+}

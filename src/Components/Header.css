@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 10vh;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 10vh;
+    width: 1em;
+}
+
+.logo img{
+    height: 90%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.user_profile{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.user_profile img{
+    height: 2rem;
+    border:thin solid gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.logout{
+    cursor: pointer;
+}

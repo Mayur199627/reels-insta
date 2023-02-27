@@ -1,0 +1,86 @@
+.signup_cont{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup_details_cont{
+    height: 600px;
+    width: 350px;
+    padding: 0 10px;
+    border: 1px solid gainsboro;
+    border-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+}
+
+.insta_logo img{
+    height: 150px;
+    width: 100%;
+}
+
+.user_details_signup{
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+.user_details_signup p{
+    font-size: 15px;
+    color: gray;
+    width: 90%;
+    text-align: center;
+}
+.user_details_signup input{
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    border: thin solid gray;
+    outline: none;
+    background-color: #ecf0f1;
+}
+
+#user_img{
+    padding-bottom: 30px;
+}
+
+.submitBtn{
+    background-color: #3498db !important;
+    color: #fff;
+    font-weight: 600;
+    border: none !important;
+    cursor: pointer;
+}
+
+.other_type_login{
+    height: 100px;
+    text-align: center;
+}
+
+.other_type_login p{
+    padding: 10px;
+    font-size: 15px;
+    color: gray;
+    text-align: center;
+}
+
+.login_with_fb{
+    width: 90%;
+    border-radius: 5px;
+    background-color: #3b5998;
+    color: #fff  !important;
+    
+}
+
+.show_error{
+    text-align: center;
+    color: red !important;
+    font-size: 1rem;
+    font-weight: 600;
+}
