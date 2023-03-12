@@ -7,7 +7,8 @@ import image1 from './images/image1.png';
 import image2 from './images/image2.png';
 import image3 from './images/image3.png';
 import image4 from './images/image4.png';
-import { auth } from './firebase';
+import { auth,database } from './firebase';
+import { getDocs, query, where } from 'firebase/firestore';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
 export default class Login extends Component {
@@ -33,8 +34,17 @@ export default class Login extends Component {
         signInWithEmailAndPassword(auth,this.state.email,this.state.password).then((responce)=>{
             const user = responce.user;
             this.setState({userData:user});
-            localStorage.setItem("user",JSON.stringify(user))
-            window.location.href = "/" 
+            let uid = user.uid;
+            // let refDoc = doc(fstore, "users", uid)
+            let q = query(database.users, where("uid", "==", uid))
+            getDocs(q).then((data)=>{
+                console.log(data.docs[0].data())
+                localStorage.setItem("user",JSON.stringify(data.docs[0].data()))
+                window.location.href = "/" 
+            }).catch((err)=>{
+                console.log(err)
+            })
+            console.log(user)
         })
         .catch((err)=>{
             this.setState({error:"User Not Register Please Signup"})

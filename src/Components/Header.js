@@ -6,6 +6,16 @@ import { auth } from './firebase';
 import { signOut } from 'firebase/auth';
 
 export default class Header extends Component {
+    constructor(){
+        super();
+        this.state = {
+            userprofile : {},
+        }
+    }
+componentDidMount(){
+    const tempUser = JSON.parse(localStorage.getItem("user"))
+    this.setState({userprofile:tempUser})
+}
 
 handleSignout = () =>{
     signOut(auth).then((res)=>{
@@ -26,7 +36,7 @@ handleSignout = () =>{
                 </div>
                 <div className="user_profile">
                 <Link to="/profile">
-                    <img src="./images/user_img.png" alt="profile_img" />
+                    <img src={this.state.userprofile.profileUrl} alt="profile_img" />
                 </Link>
                    <Button className="logout" variant="outlined" color='error' onClick={this.handleSignout}>Logout</Button>
                 </div>

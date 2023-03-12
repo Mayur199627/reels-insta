@@ -52,8 +52,10 @@ export default class VideoUpload extends Component {
                 likes : [],
                 commnts : [],
                 pId : uid,
+                uId : this.state.user.uid,
                 pUrl : downloadUrl,
-                uName : this.state.user.email,
+                uName : this.state.user.fullname ? this.state.user.fullname: this.state.user.email,
+                userProfileUrl:this.state.user.profileUrl,
                 createdAt : Date.now()
             }
             addDoc(database.posts, obj).then((refrences) =>{
@@ -67,8 +69,6 @@ export default class VideoUpload extends Component {
         const uploadRef = ref(storage, `/posts/${uid}/${file.name}`);
         const uploadTask = uploadBytesResumable(uploadRef, file);
         uploadTask.on('state_changed',f1,f2,f3);
-
-        console.log(file)
     }
   
     render() {

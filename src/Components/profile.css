@@ -1,0 +1,53 @@
+.user-img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding: 20px 0px;
+}
+
+.user-details{
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.reels{
+    margin: 20px;
+}
+
+.reels-list{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    width: 100%;
+    padding: 20px;
+}
+
+.single-reel{
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+}
+
+.main-page-reel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont-reels{
+    position: relative;
+    margin: 10px;
+}
+
+
+.like-comment-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 50%;
+    right: 8%;
+}

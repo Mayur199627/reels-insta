@@ -29,5 +29,6 @@ export const database = {
   posts :collection(firestore,"posts"),
   comments:collection(firestore,"comments"),
 }
+export const fstore = firestore;
 
 export const storage = getStorage(app)
