@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Mayur199627.github.io/insta-reels",
+  "homepage": "https://Mayur199627.github.io/reels-insta",
   "name": "instrgram",
   "version": "0.1.0",
   "private": true,
@@ -23,7 +23,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
