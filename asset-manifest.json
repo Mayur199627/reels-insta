@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/reels-insta/static/css/main.d8d4ed83.css",
+    "main.js": "/reels-insta/static/js/main.18e79acf.js",
+    "static/media/image3.png": "/reels-insta/static/media/image3.a015f55058ad24a00428.png",
+    "static/media/image2.png": "/reels-insta/static/media/image2.d688ff1f110b88f3c0c9.png",
+    "static/media/image1.png": "/reels-insta/static/media/image1.66d6eaaf896694188857.png",
+    "static/media/image4.png": "/reels-insta/static/media/image4.a8b4d779fa1026a205a2.png",
+    "index.html": "/reels-insta/index.html",
+    "main.d8d4ed83.css.map": "/reels-insta/static/css/main.d8d4ed83.css.map",
+    "main.18e79acf.js.map": "/reels-insta/static/js/main.18e79acf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8d4ed83.css",
+    "static/js/main.18e79acf.js"
+  ]
+}
