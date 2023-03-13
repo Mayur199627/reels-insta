@@ -33,7 +33,7 @@ componentDidMount(){
       <div className='user-details'>
         <div className="userImg">
           <h1>User Profile</h1>
-          <img src={this.state.userprofile.profileUrl} alt="user-image" className='user-img'/>
+          <img src={this.state.userprofile.profileUrl} alt="user-profile" className='user-img'/>
         </div>
         <div className="user-name">
           <h2>User Name : {this.state.userprofile.fullname}</h2>
